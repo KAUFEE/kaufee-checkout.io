@@ -1,0 +1,219 @@
+/* Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Reset */
+
+
+body {
+    font-size: 18px;
+    font-weight: 400;
+    background-color: white;
+}
+
+
+/* Head */
+body .head {
+    display: block;
+    margin: 121px auto 0;
+    text-align: center;
+}
+body .head h6 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #6C4A4A;
+}
+/* End Head */
+
+
+
+
+
+/* Main */
+body .main .container {
+    position: relative;
+    width: 860px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 116px auto 0;
+}
+body .main .container .left {
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 85px;
+    left: 0;
+    transform: rotate(180deg);
+}
+body .main .container .right {
+    width: 20px;
+    height: 30px;
+    position: relative;
+    right: 0;
+    top: 85px;
+    transform: rotate(0);
+}
+body .main .container .cards {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px #6C4A4A solid;
+}
+body .main .container .cards:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,.1);
+    z-index: 20;
+    pointer-events: none;
+}
+body .main .container .cards .imgBx {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+body .main .container .cards .imgBx img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    transform: rotate(0);
+    z-index: 0;
+}
+body .main .container .cards .imgBx .center {
+    position: absolute;
+    top: 50%;
+    margin: 0;
+    width: 200px;
+    padding: 0;
+    color: #6C4A4A;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+body .main .container .cards .imgBx .price {
+    position: absolute;
+    top: 200px;
+    margin: 10px;
+    font-weight: 700;
+    color: #6C4A4A;
+}
+body .main .container .cards .imgBx .quantity {
+    position: absolute;
+    color: #6C4A4A;
+    top: 238px;
+}
+body .main .container .cards .imgBx .quantity h6 {
+    display: inline-block;
+    margin: 0 5px;
+}
+body .main .container .cards .imgBx .quantity input {
+    display: inline-block;
+    width: 75px;
+}
+/* End Main */
+
+
+
+
+
+/* Total */
+body .total {
+    margin: 115px auto 71px;
+    text-align: center;
+}
+body .total h5 {
+    color: rgba(108, 74, 74, 0.5);
+    padding: 6px;
+}
+body .total h2 {
+    color: #6C4A4A;
+    font-weight: 700;
+    font-size: 24px;
+}
+/* End Total */
+
+
+
+
+
+/* Selection */
+body .selection {
+    margin: 0 auto 88px;
+    text-align: center;
+}
+body .selection a {
+    width: 200px;
+    height: 50px;
+    display: inline-block;
+    border: 3px solid #6C4A4A;
+    line-height: 50px;
+    background-color: white;
+    text-decoration: none;
+    color: #6C4A4A;
+    font-weight: 700;
+    margin: 0 5px;
+}
+body .selection a:hover {
+    font-size: 24px;
+    border: 3px solid white;
+    background-color: #6C4A4A;
+    color: white;
+    transition: 0.5s;
+}
+/* End Selection */
